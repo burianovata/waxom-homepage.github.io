@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 
 body {
 	font-family: "Montserrat";
@@ -116,7 +117,6 @@ section#services div.service:hover i {
 	color: #c7b299;
 }
 
-
 /*********************************************************
 *******************PRESENTATION-SECTION*******************
 *********************************************************/
@@ -128,7 +128,6 @@ section#presentation {
 section#presentation img {
 	margin: auto;
 }
-
 
 /*********************************************************
 *******************PURCHASE-SECTION*******************
@@ -182,8 +181,6 @@ div.card div.card-hover {
 	background: rgba(27, 27, 27, 0.8);
 }
 
-
-
 div.card div.card-hover div.card-hover-content {
 	position: absolute;
 	top: 50%;
@@ -201,7 +198,8 @@ div.card div.card-hover div.card-hover-content i {
 div.card div.card-caption {
 	position: relative;
 	width: 100%;
-	padding: 25px;
+	height: 100%;
+	padding: 1rem;
 	background-color: #fbfaf8;
 	color: #8b8b8b;
 }
@@ -210,7 +208,6 @@ div.card div.card-caption h3 {
 	font-weight: 400;
 	color: #c7b299;
 }
-
 
 div.card div.card-caption:before {
 	position: absolute;
@@ -245,71 +242,67 @@ div.card:hover div.card-caption p {
 	color: #c7b299;
 }
 
-
 section#projects .btn {
 	color: white;
 }
-
-
 
 /*********************************************************
 *******************VIDEO-SECTION*******************
 *********************************************************/
 section#video {
+	padding: 10rem 0;
 	position: relative;
-	height: 40vh;
 	width: 100%;
 	overflow: hidden;
 }
 
 video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-60%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-60%);
 }
 
 section#video .video-caption {
-	color: white;
 	position: relative;
 	width: 100%;
 	z-index: 2;
 }
 
-
-section#video .video-caption h2 {
-	color: white;
-}
-
 section#video .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
 }
 
 /*********************************************************
 *******************FEATURES-SECTION*******************
 *********************************************************/
 
-section#features ul {
-	list-style: none;
+section#features i {
+	font-size: 16px;
+	border-radius: 65%;
+	padding: 10px;
+	margin: 0 10px;
+	color: #fff;
+	background-color: #998675;
 }
 
-section#features ul img {
-	padding: 0.5rem;
+section#features img {
+	max-width: 100%;
 }
 
 /*********************************************************
@@ -321,17 +314,17 @@ section#achievements {
 	color: #7b706c;
 }
 
-section#achievements div.achievement i {
+section#achievements .achievement i {
 	color: #c6b199;
 	padding-bottom: 1rem;
 }
 
-section#achievements div.achievement p.achievements-count {
+section#achievements .achievement p.achievements-count {
 	color: white;
 	font-size: 3rem;
 }
 
-section#achievements div.achievement p.achievement-title {
+section#achievements .achievement p.achievement-title {
 	color: #c6b199;
 	text-transform: uppercase;
 }
@@ -410,7 +403,6 @@ div.card:hover .card-img {
 	transition: background-color 0.35s ease-in-out;
 }
 
-
 /*********************************************************
 *******************CLIENTS-SECTION*******************
 *********************************************************/
@@ -427,7 +419,6 @@ section#clients {
 		top: 30%;
 	}
 }
-
 
 /*********************************************************
 *******************ADDITIONAL-INFO-SECTION*******************
@@ -456,7 +447,6 @@ section#additional-info div.news p {
 
 section#additional-info div.news hr {
 	background-color: #555;
-
 }
 
 section#additional-info div.news:hover p.date {
@@ -512,80 +502,3 @@ footer ul li:last-child:after {
 span.light {
 	color: #959595;
 }
-
-
-
-
-
-
-
-
-
-
- .portfolio-item {
-  right: 0;
-  margin: 0 0 15px;
-}
-
- .portfolio-item .portfolio-link {
-  position: relative;
-  display: block;
-  max-width: 400px;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
- .portfolio-item .portfolio-link .portfolio-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
-}
-
- .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-
- .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 20px;
-  margin-top: -12px;
-  text-align: center;
-  color: white;
-}
-
- .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-
- .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-  .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
-
- .portfolio-item .portfolio-caption {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 25px;
-  text-align: center;
-  background-color: #fff;
-}
-
- .portfolio-item .portfolio-caption h4 {
-  margin: 0;
-  text-transform: none;
-}
-
- .portfolio-item .portfolio-caption p {
-  font-size: 16px;
-  font-style: italic;
-  margin: 0;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-

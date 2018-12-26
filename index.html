@@ -5,18 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
 		<link rel="stylesheet" href="css/styles.css">
 
 		<title>Waxom</title>
 	</head>
 	<body>
+		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg navbar-static-top" id="mainNav">
 	      <div class="container">
 	        <a class="navbar-brand js-scroll-trigger" href="#"><img class="logo" src="img/logo.png" alt=""></a>
@@ -50,6 +44,7 @@
 	        </div>
 	      </div>
 	    </nav>
+	    <!-- Header -->
 	    <header>
 	    	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			    <ol class="carousel-indicators">
@@ -96,6 +91,7 @@
 		        </a>
 			</div>
 	    </header>
+	    <!-- Services section -->
 	    <section id="services">
 	    	<div class="container">
 	    		<div class="row">
@@ -131,6 +127,7 @@
 	    		</div>
 	    	</div>
 	    </section>
+	    <!-- Presentation section -->
 		<section id="presentation" class="pb-0">
 			<div class="container">
 				<div class="row">
@@ -144,6 +141,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- Purchase section -->
 		<section id="purchase" class="py-4">
 			<div class="container">
 				<div class="row">
@@ -157,6 +155,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- Projects section -->
 		<section id="projects">
 			<div class="container">
 				<div class="row">
@@ -165,6 +164,7 @@
 						<p class="col-lg-9 mx-auto">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 					</div>
 				</div>
+				<!-- Nav pills -->
 				<div class="row">
 					<div class="col-lg-12">
 						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -186,6 +186,7 @@
 						</ul>
 					</div>
 				</div>
+				<!-- Cards -->
 				<div class="row">
 					<div class="col-lg-4 col-sm-6 mb-5">
 						<div class="card h-100">
@@ -300,41 +301,45 @@
 				</div>
 			</div>
 		</section>
+		<!-- Video section -->
 		<section id="video">
 			<div class="container-fluid">
 				<div class="overlay"></div>
 				<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 					<source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
 				</video>
-				<div class="video-caption text-center p-5">
-				  <div class="">
-				    <h2>Waxom video presentation</h2>
+				<!-- Video caption -->
+				<div class="video-caption text-center text-white p-5">
+				    <h2 class="text-white">Waxom video presentation</h2>
 				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				    tempor</p>
-				  </div>
 				</div>
 			</div>
 		</section>
+		<!-- Features section -->
 		<section id="features" class="pb-0">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3"><img class="col-12 px-0" src="img/phone.png" alt=""></div>
-					<div class="col-lg-9">
+					<div class="col-lg-5">
+						<img src="img/phone.png" alt="">
+					</div>
+					<div class="col-lg-7">
 						<h2 class="text-capitalize pb-3">Excellent for mobile devices</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit</p>
-						<ul>
-							<li><img src="img/arrow.png" alt="">Nam liber tempor cum soluta nobis eleifend option;</li>
-							<li><img src="img/arrow.png" alt="">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
-							<li><img src="img/arrow.png" alt="">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
-							<li><img src="img/arrow.png" alt="">Investigationes demonstraverunt lectores</li>
+						<ul class="list-unstyled">
+							<li class="p-2"><i class="fas fa-arrow-right"></i> Nam liber tempor cum soluta nobis eleifend option;</li>
+							<li class="p-2"><i class="fas fa-arrow-right"></i> Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+							<li class="p-2"><i class="fas fa-arrow-right"></i> Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+							<li class="p-2"><i class="fas fa-arrow-right"></i> Investigationes demonstraverunt lectores</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- Achievements section -->
 		<section id="achievements" class="pb-4 pt-5">
 	    	<div class="container">
 	    		<div class="row text-center">
@@ -371,6 +376,7 @@
 	    		</div>
 	    	</div>
 	    </section>
+	    <!-- Posts section -->
 	    <section id="posts">
 	    	<div class="container">
 	    		<div class="row">
@@ -379,6 +385,7 @@
 	    				<p class="col-lg-9 mx-auto description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 	    			</div>
 	    		</div>
+	    		<!-- Posts -->
 	    		<div class="row">
 	    			<div class="col-lg-4 col-sm-6 mb-4">
 	    				<div class="card h-100">
@@ -436,6 +443,7 @@
 	    		</div>
 	    	</div>
 	    </section>
+	    <!-- Clients section -->
 	    <section id="clients">
 	    	<div class="container">
 	    		<div class="row">
@@ -454,9 +462,11 @@
 	    		</div>
 	    	</div>
 	    </section>
+	    <!-- Additional info section -->
 	    <section id="additional-info">
 	    	<div class="container">
 	    		<div class="row">
+	    			<!-- About company -->
 	    			<div class="col-lg-3 col-md-6 py-3" id="about-company">
 	    				<img class="logo mb-4" src="img/logo.png" alt="logo">
 	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -465,6 +475,7 @@
 	    				consequat.</p>
 	    				<a href="#">Read more <i class="fas fa-arrow-right"></i></a>
 	    			</div>
+	    			<!-- Recent posts -->
 	    			<div class="col-lg-3 col-md-6 py-3" id="recent-posts">
 	    				<div class="title"><h5>Recent posts</h5></div>
 	    				<div class="news">
@@ -482,6 +493,7 @@
 		    				<p class="description">Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt</p>
 	    				</div>
 	    			</div>
+	    			<!-- Twitter -->
 	    			<div class="col-lg-3 col-md-6 py-3" id="twitter">
 	    				<div class="title"><h5>Our twitter</h5></div>
 						<div class="news">
@@ -499,18 +511,20 @@
 		    				<p class="date">2 days ago</p>
 	    				</div>
 	    			</div>
+	    			<!-- Widget -->
 	    			<div class="col-lg-3 col-md-6 py-3" id="widget">
 	    				<div class="title"><h5>Dribble widget</h5></div>
 	    				<div class="row">
-	    				<div class="col-6"><img class="img-fluid" src="img/widget-img1.png" alt=""></div>
-	    				<div class="col-6"><img class="img-fluid" src="img/widget-img2.png" alt=""></div>
-	    				<div class="col-6"><img class="img-fluid" src="img/widget-img3.png" alt=""></div>
-	    				<div class="col-6"><img class="img-fluid" src="img/widget-img4.png" alt=""></div>
-	    			</div>
+		    				<div class="col-6"><img class="img-fluid" src="img/widget-img1.png" alt=""></div>
+		    				<div class="col-6"><img class="img-fluid" src="img/widget-img2.png" alt=""></div>
+		    				<div class="col-6"><img class="img-fluid" src="img/widget-img3.png" alt=""></div>
+		    				<div class="col-6"><img class="img-fluid" src="img/widget-img4.png" alt=""></div>
+	    				</div>
 	    			</div>
 	    		</div>
 	    	</div>
 	    </section>
+	    <!-- Footer -->
 	    <footer>
 	    	<div class="container">
 	    		<div class="row">
@@ -531,5 +545,9 @@
 	    		</div>
 	    	</div>
 	    </footer>
+	    <!-- Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
